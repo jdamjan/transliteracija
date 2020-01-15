@@ -1,0 +1,31 @@
+body { color: #00569c; background: #FFFFFF; font-family: Philosopher; }
+
+.text { width:95%; color:rgb(0, 11, 105); font-family:'Philosopher'; font-size:12pt; padding:10px; letter-spacing: 0.5px;}
+
+a { color: #00569c; text-decoration: underline; }
+a:hover { color: #DD0000; text-decoration: none; }
+
+input { font-family: Philosopher; color: rgb(136, 0, 0); font-size:14pt; }
+select { color: #00569c; }
+
+.center { text-align: center; }
+.right { text-align: right; margin-right: 5%;}
+.right1 { text-align: right; margin-right: 5%;}
+.right2 { float: right; margin-right:3%;}
+.left { text-align: left; margin-left:3%; font-size: 14pt;}
+.left1 { float: left; margin-left: 3%;}
+.left2 { float: left; margin-left: 3%;}
+
+/* colors */
+
+.all { font-family: Philosopher; }
+
+.span-red { color: #FF0000; }
+
+
+
+/* table */
+
+.txt_ed { width:100%; border:0; }
+.txt_ed tr { vertical-align:top; text-align:center; }
+.txt_ed td { width:50%; }

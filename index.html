@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+    <html lang="mk">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+
+        <title>Транслитерација на кирилица во латиница и обратно</title>
+
+        <meta name="Description" content="Транслитерација">
+        <meta name="Keywords" content="транслитерација, кирилица, латиница, македонски, македонски јазик"> 
+        <link rel="shortcut icon" href="./files/mk.ico">
+
+        <link href="./files/style.css" rel="stylesheet" type="text/css">
+        <script src="./files/transliteracija.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Philosopher&display=swap" rel="stylesheet"> 
+    </head>
+
+    <body>
+        <h1 class = "left1">Кирилица → Латиница</h1>
+        <h1 class = "right2">Латиница → Кирилица</h1> <br><br><br><br><br>
+        <div class="left2">
+            <pt id="sts">
+                Избери стандард за транслитерација (К→Л)<a href="https://mk.wikipedia.org/wiki/Транслитерација_на_македонското_писмо">*</a> :
+                <select id="standard">
+                    <option value="1" onclick="">ISO 9</option>
+                    <option value="2" onclick="">Училишен</option>
+                    <option value="3" onclick="">Службен</option>
+                </select>
+            </pt>
+        </div>
+        <div class="right2">
+            <pt id="sts">
+                Избери стандард за транслитерација (Л→К)<a href="https://mk.wikipedia.org/wiki/Транслитерација_на_македонското_писмо">*</a> :
+                <select id="standard">
+                    <option value="" onclick="">Автоматски</option>
+                </select>
+            </pt>
+        </div>
+        <br><br><br>
+        <div class="center">Внесете текст<br>
+
+
+        <noscript>
+            <span class="span-red">Срање! JavaScript-ата е оневозможена</span><br>
+            За да го решиш срањето <a class="ext" href="https://www.enable-javascript.com/" target="_blank">види тука</a>.<br><br>
+        </noscript>
+
+        <form name="transliteracija">
+            <table class="txt_ed">
+                <tr>
+                    <td>
+                        Кирилица <br>
+                        <textarea id="bar1" name="text1" rows="15" onkeyup="cyrilicsTolatin()" class="text"></textarea><br>
+                    </td>
+                    <td>
+                        Латиница <br>
+                       <textarea id="bar2" name="text2" rows="15" onkeyup="latinTocyrilics()" class="text"></textarea><br><br>
+                    </td>
+                </tr>
+            </table>
+
+            <p class="right2"><input type="button" onclick="reset();transliteracija.text2.focus()" onclick="reset();transcription.text1.focus()" value="исчисти"></p>
+            <p class="left">
+                <a href="https://mk.wikipedia.org/wiki/Транслитерација_на_македонското_писмо">Транслитерација на македонското писмо</a> - Википедија <br>
+                <a href="http://makedonski.info/">makedonski.info</a> - Дигитален речник на македонскиот јазик <br>
+            </p>
+        </form>
+
+        <footer>
+            <p class="center"><br>&#169; 2020 Дамјан Јанчевски</p>
+        </footer>
+
+    </body>
+</html>
